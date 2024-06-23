@@ -24,7 +24,7 @@ const Projects = () => {
             />
             <ProjectCard
             src={logo3}
-            link="https://github.com/Ade-mir/company-landing-page-2"
+            link="https://github.com/izzatishafa/todo-app"
             h3="To-Do List App"
             p="Productivity App"
             />
