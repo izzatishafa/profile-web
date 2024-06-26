@@ -72,15 +72,22 @@
   }
   
   .description {
-    max-width: 24ch;    
+    /* max-width: 30ch;     */
     text-align: center;
+    font-size: large;
   }
   
   .info {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 550px;
   }
+
+
+
+
+
   
   @media (width >= 800px) {
     .container {

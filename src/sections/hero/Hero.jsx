@@ -2,8 +2,6 @@ import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/profile-cv.jpg';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import twitterLight from '../../assets/twitter-light.svg';
-import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
@@ -17,7 +15,6 @@ const Hero = () => {
     const { theme, toggleTheme } = useTheme();
 
     const themeIcon = theme === 'light' ? sun : moon;
-    const twitterIcons = theme === 'light' ? twitterLight : twitterDark;
     const instagramIcons = theme === 'light' ? instagramLight : instagramDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
@@ -30,8 +27,8 @@ const Hero = () => {
                 <img src={themeIcon} alt="Color mode icon" className={styles.colorMode} onClick={toggleTheme} />
             </div>
             <div className={styles.info}>
-                <h1>Izzati <br />Shafa</h1>
-                <h2>Frontend Developer</h2>
+                <h1 className='title'>Hi, I'm Izzati <span>Shafa</span></h1>
+                <h2 className='title'>A Frontend Developer</h2>
                 <span>
                     <a href="https://instagram.com/iztshf_" target='_blank'>
                         <img src={instagramIcons} alt="Instagram Icon" />
@@ -44,7 +41,7 @@ const Hero = () => {
                     </a>
                 </span>
                 <p className={styles.description}>
-                    From Lines of Code to Lines of Elegance: Your Digital Journey Begins Here.
+                    From Lines of Code <br /> to Lines of Elegance: Your Digital <br /> Journey Begins Here.
                 </p>
                 <a href={CV} download>
                     <button className="hover">
